@@ -1,9 +1,16 @@
 package com.springboot.ShoppingSite.Entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "authorities")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Authority {
 
     @Id

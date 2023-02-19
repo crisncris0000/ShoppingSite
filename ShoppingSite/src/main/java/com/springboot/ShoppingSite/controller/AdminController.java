@@ -59,7 +59,7 @@ public class AdminController {
         List<Category> categories = categoryService.findALl();
 
         for (Category category : categories) {
-            categoryMap.put(categoryService.findCategoryById(category.getId()).getCategory(), category.getId());
+            categoryMap.put(categoryService.findCategoryById(category.getId()).getCategoryName(), category.getId());
         }
 
         model.addAttribute("item", item);

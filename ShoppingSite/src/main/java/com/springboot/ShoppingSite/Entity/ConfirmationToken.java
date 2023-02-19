@@ -1,9 +1,7 @@
 package com.springboot.ShoppingSite.Entity;
 
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -11,9 +9,11 @@ import java.util.UUID;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @Entity
 @Table(name = "confirmation_token")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class ConfirmationToken {
 
     @Id

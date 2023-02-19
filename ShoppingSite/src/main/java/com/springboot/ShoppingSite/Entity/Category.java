@@ -1,10 +1,15 @@
 package com.springboot.ShoppingSite.Entity;
 
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "categories")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Category {
 
     @Id
@@ -13,7 +18,7 @@ public class Category {
     private int id;
 
     @Column(name = "category")
-    private String category;
+    private String categoryName;
 
     public int getId() {
         return id;
@@ -23,11 +28,11 @@ public class Category {
         this.id = id;
     }
 
-    public String getCategory() {
-        return category;
+    public String getCategoryName() {
+        return categoryName;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 }

@@ -1,0 +1,86 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color:#E6B370;
+}
+
+.register-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  height: 700px;
+  width: 700px;
+
+  background-color: rgba(211, 211, 211, 0.623);
+
+  border: 2px solid black;
+}
+
+.register-container h2{
+  text-align: center;
+}
+
+.register-container input {
+  background-color: rgb(211, 211, 211);
+
+  height: 30px;
+  width: 50%;
+}
+
+.register-container label img{
+  height: 50px;
+  width: 50px;
+  
+  right: 5px;
+  top: 10px;
+
+  position: relative;
+}
+
+.register-container a {
+  margin-top: 100px;
+  margin-left: 150px;
+
+  position: absolute;
+}
+
+.email-field{
+  margin-top: 130px;
+  margin-left: 190px;
+}
+
+.password-field{
+  margin-top: 50px;
+  margin-left: 190px;
+}
+
+.register-container button{
+  width: 70px;
+  height: 30px;
+
+  margin-top: 70px;
+
+  background-color: pink;
+}
+
+#register{
+  margin-left: 420px;
+}
+
+.home-link{
+  top: 570px;
+}
+
+.register-container button:active{
+  background-color: rgb(179, 148, 153);
+}
+
+.error{
+  margin-left: 300px;
+  margin-top: 30px;
+
+  color: red;
+}

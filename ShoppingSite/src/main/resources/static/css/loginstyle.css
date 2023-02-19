@@ -1,0 +1,105 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color:#B97836;
+}
+
+.login-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  height: 700px;
+  width: 700px;
+
+  background-color: rgba(211, 211, 211, 0.623);
+
+  border: 2px solid black;
+}
+
+.login-container h2{
+  text-align: center;
+}
+
+.login-container input {
+  background-color: rgb(211, 211, 211);
+
+  height: 30px;
+  width: 50%;
+}
+
+.login-container label img{
+  height: 50px;
+  width: 50px;
+  
+  right: 5px;
+  top: 10px;
+
+  position: relative;
+}
+
+a:hover{
+  color: red;
+}
+
+.login-container .home-page {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 70px;
+  text-decoration: none;
+  color: black;
+}
+
+.login-container .reset-password{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 450px;
+  text-decoration: none;
+  color: black;
+}
+
+
+.email-field{
+  margin-top: 130px;
+  margin-left: 190px;
+}
+
+.password-field{
+  margin-top: 50px;
+  margin-left: 190px;
+}
+
+.login-container button{
+  width: 70px;
+  height: 30px;
+
+  margin-top: 70px;
+
+  background-color: pink;
+}
+
+#login{
+  margin-top: 100px;
+  margin-left: 430px;
+}
+
+#register{
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 200px;
+  text-decoration: none;
+  color: black;
+}
+
+.login-container button:active{
+  background-color: rgb(179, 148, 153);
+}
+
+.alert-error{
+  color: red;
+  font-size: 20px;
+  margin-left: 190px;
+  margin-top: 20px
+}

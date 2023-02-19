@@ -1,0 +1,134 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.crafts-container{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #FFDEDE;
+
+  width: 1300px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.delete-icon{
+  position: absolute;
+  margin-left: 280px;
+  margin-top: -350px;
+}
+
+.delete-icon img{
+  height: 50px;
+  width: 50px;
+}
+
+.card{
+  background: white;
+  padding: 1rem;
+  border: 1px solid #777;
+  border-radius: .25rem;
+  margin: 45px;
+  width: 300px;
+
+}
+
+.card-header{
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.card-header.card-img{
+  overflow: hidden;
+}
+
+.card-img{
+  display: block;
+  width: 300px;
+  height: 200px;
+
+  object-position: center;
+
+  transition: 200ms transform ease-in-out;
+}
+
+.card-img:hover{
+  transform: scale(1.025);
+}
+
+.card-body{
+  font-size: .9rem;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.card-footer{
+  margin-top: 1rem;
+}
+
+.item-price{
+   position: absolute;
+   display: flex;
+   margin-top: -15px;
+}
+
+.price{
+   margin-left: 10px;
+   margin-top: 23px;
+}
+
+.btn{
+  background-color: hsl(313, 56%, 34%);
+  color: white;
+  border: none;
+  padding: .5em .75em;
+  border-radius: .25em;
+  cursor: pointer;
+  float: right;
+}
+
+.btn:hover, btn:focus{
+  background-color: hsl(313, 56%, 40%);
+}
+
+#add-button img{
+
+  float: right;
+
+  margin-right: 80px;
+
+  height: 100px;
+  width: 100px;
+}
+
+#add-button img:active{
+  /* Return too */
+
+}
+
+
+/* 50% */
+@media all and (min-width: 2952px) and (min-height: 1520px){
+  .crafts-container{
+    margin-top: 300px;
+  }
+
+}
+/* 33% */
+@media all and (min-width: 4428px) and (min-height: 2883px){
+  .crafts-container{
+    margin-top: 700px;
+  }
+
+}
+/* 25% */
+@media all and (min-width: 5904px) and (min-height: 3844px){
+  .crafts-container{
+    margin-top: 1200px;
+  }
+
+}

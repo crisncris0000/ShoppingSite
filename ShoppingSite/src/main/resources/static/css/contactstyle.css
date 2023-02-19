@@ -1,0 +1,140 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  height: 700px;
+  width: 700px;
+
+  background-color: #F1DEEE;
+
+  border: 2px solid black;
+}
+
+
+.contact-container h2{
+  text-align: center;
+}
+
+.contact-form input{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+
+  margin-left: 35px;
+  height: 30px;
+  width: 200px;
+}
+
+.contact-form .name-field{
+  margin-top: 100px;
+}
+
+.contact-form .email-field{
+  margin-top: 100px;
+}
+
+.contact-form .subject-field{
+  height: 100px;
+}
+
+.contact-form .subject-field textarea{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
+
+.contact-form .name-field label{
+  margin-right: 147px;
+  margin-left: 10px;
+}
+
+.contact-form .email-field label{
+  margin-top: 100px;
+  margin-right: 147px;
+  margin-left: 10px;
+}
+
+.contact-form .subject-field{
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
+.contact-form .subject-field label{
+  position: relative;
+  right: 235px;
+  top: -130px;
+}
+
+.contact-form button {
+  margin-top: 95px;
+  margin-left: 440px;
+
+  width: 100px;
+  height: 30px;
+
+  background-color: green;
+
+}
+
+.contact-form button:active{
+  background-color: darkgreen;
+}
+
+
+
+/* 80 */
+
+@media all and (min-height: 1201.25px){
+  #footer{
+    margin-top: 173px;
+  }
+
+  .contact-container{
+    margin-top: 200px;
+  }
+}
+
+/* 75% */
+
+@media all and (min-height: 1281.33px){
+  #footer{
+    margin-top: 310px;
+  }
+}
+
+/* 50% */
+@media all and (min-width: 2952px) and (min-height: 1520px){
+  #footer{
+    margin-top: 700px
+  }
+
+  .contact-container{
+    margin-top: 300px;
+  }
+
+}
+/* 33% */
+@media all and (min-width: 4428px) and (min-height: 2883px){
+  #footer{
+    margin-top: 950px;
+  }
+
+  .contact-container{
+    margin-top: 1000px;
+  }
+
+}
+/* 25% */
+@media all and (min-width: 5904px) and (min-height: 3844px){
+  #footer{
+    margin-top: 1580px;
+  }
+
+  .contact-container{
+    margin-top: 1320px;
+  }
+
+}

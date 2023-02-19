@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/cartstyle.css}">
+    <link rel="stylesheet" th:href="@{/css/stylesheet.css}">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+
+<div id="navigation-bar">
+    <ul>
+        <li><a th:href="@{/home}"><img src="Images/Logo.png" id="logo"></a></li>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/crafts}">Crafts</a></li>
+        <li><a th:href="@{/contact}">Contact Me</a></li>
+        <li sec:authorize="isAnonymous()"><a th:href="@{/login}">Login</a></li>
+        <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+        <li><a th:href="@{/cartPage}"><img th:src="@{/Images/shoppingIcon.png}"></a></li>
+    </ul>
+</div>
+
+<div id="shopping-cart">
+    <h1>Shopping Cart</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Remove</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${cartItems}" modelAttribute>
+            <td>
+                <img th:src="@{${item.item.imagePath}}"></td>
+            <td>
+                <input type="number" value="1" disabled>
+            </td>
+            <td>
+                <img th:src="@{/Images/delete_icon.png}" class="delete-icon">
+            </td>
+            <td th:text="${item.item.price}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<form method="POST" th:action="@{/pay}" th:object="${orderInfo}">
+    <div class="form-group">
+        <label for="price">Total</label>
+        <input type="text" class="form-control" id="price" name="price" placeholder="Total" th:value="${orderInfo.price}" disabled>
+    </div>
+    <div class="form-group">
+        <label for="method">Intent</label>
+        <input type="text" class="form-control" id="method" name="method" value="paypal" disabled>
+    </div>
+    <div class="form-group">
+        <label for="description">description</label>
+        <textarea type="text" class="form-control" id="description" name="description" placeholder="description" style="resize: none;">
+        </textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Payment</button>
+</form>
+
+</body>
+
+</html>

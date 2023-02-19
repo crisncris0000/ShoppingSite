@@ -1,0 +1,104 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.add-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+
+  height: 900px;
+  width: 900px;
+
+  background-color: lightgray;
+
+  border: 2px solid black;
+}
+
+.add-container h2{
+  text-align: center;
+}
+
+.add-container input{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+
+  margin-left: 35px;
+  height: 30px;
+  width: 200px;
+}
+
+#description{
+  margin-left: 170px;
+  margin-top: 400px;
+}
+
+#description-field label{
+  position: relative;
+
+  top: -140px;
+  left: 20px;
+}
+
+.add-container button {
+  margin-top: 100px;
+  margin-left: 550px;
+
+  width: 100px;
+  height: 30px;
+
+  background-color: green;
+}
+
+.add-container button:active{
+  background-color: darkgreen;
+}
+
+.button-group{
+  margin-top: 80px;
+  position: absolute;
+  margin-left: -50px;
+}
+
+.label-group{
+  margin-left: 50px;
+  margin-top: 35px;
+  position: absolute;
+}
+
+.label-2{
+  margin-left: 175px;
+}
+
+.label-3{
+  margin-left: 155px;
+}
+
+.label-4{
+  margin-left: 170px;
+}
+
+div a {
+  position: absolute;
+  margin-left: 100px;
+}
+
+#fileUpload{
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 350px;
+
+  background: none;
+}
+
+.pricing{
+   position: absolute;
+   margin-top: 230px;
+}
+
+.item-quantity{
+   position: absolute;
+   top: 330px;
+   margin-left: 630px;
+
+}

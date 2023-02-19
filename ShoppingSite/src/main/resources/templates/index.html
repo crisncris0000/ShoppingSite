@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/stylesheet.css}">
+    <title>Carols Crafts</title>
+</head>
+<body>
+<div id="navigation-bar">
+    <ul>
+        <li><a th:href="@{/home}"><img src="Images/Logo.png" id="logo"></a></li>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/crafts}">Crafts</a></li>
+        <li><a th:href="@{/contact}">Contact Me</a></li>
+        <li sec:authorize="isAnonymous()"><a th:href="@{/login}">Login</a></li>
+        <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+        <li><a th:href="@{/cartPage}"><img th:src="@{/Images/shoppingIcon.png}"></a></li>
+    </ul>
+</div>
+
+<h1 class="title">You might be interested in..</h1>
+
+<div class="container">
+
+
+    <div class="category-1">
+        <h2>Clothing</h2>
+        <div class="image-container" th:each="clothing : ${clothingItems}">
+            <img th:src="@{${clothing.imagePath}}" class="clothingItems">
+        </div>
+    </div>
+
+    <div class="category-2">
+        <h2>Cosmetics</h2>
+        <div class="image-container" th:each="cosmetic : ${cosmeticItems}">
+            <img th:src="@{${cosmetic.imagePath}}" class="cosmeticItems">
+        </div>
+    </div>
+
+    <div class="category-3">
+        <h2>Celebration</h2>
+        <div class="image-container" th:each="celebration : ${celebrationItems}">
+            <img th:src="@{${celebration.imagePath}}" class="celebrationItems">
+        </div>
+    </div>
+
+    <div class="category-4">
+        <h2>Other</h2>
+        <div class="image-container" th:each="other : ${otherItems}">
+            <img th:src="@{${other.imagePath}}" class="otherItems">
+        </div>
+    </div>
+
+</div>
+
+<div id="footer">
+    <a href="https://www.instagram.com/mckcarcreations/" target="_blank"><img th:src="@{Images/Instagram_Icon.png}" style="height: 50px; width: 100px"></a>
+</div>
+
+
+</body>
+</html>

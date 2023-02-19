@@ -1,0 +1,82 @@
+#shopping-cart {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  font-size: 1.2em;
+  padding: 12px;
+}
+th {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+#checkout-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+#checkout-button:hover {
+  background-color: #45a049;
+}
+
+.delete-icon{
+  height: 50px;
+
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}

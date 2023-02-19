@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/add-form.css}">
+    <link rel="stylesheet" th:href="@{/css/stylesheet.css}">
+    <title>Add your work</title>
+</head>
+<body>
+
+<div class="add-container">
+
+    <h2>Enter the necessary info</h2>
+    <hr style="border: 2px solid black;">
+
+    <form class="contact-form" method="POST" th:action="@{/crafts/save}" th:object="${item}"
+          enctype="multipart/form-data">
+
+        <div class="button-group">
+            <input type="radio" name="category-choice" id="choice-1" th:field="*{category}" th:value="${clothing}">
+            <input type="radio" name="category-choice" id="choice-2" th:field="*{category}" th:value="${cosmetics}">
+            <input type="radio" name="category-choice" id="choice-3" th:field="*{category}" th:value="${celebration}">
+            <input type="radio" name="category-choice" id="choice-4" th:field="*{category}" th:value="${other}">
+        </div>
+
+        <div class="label-group">
+            <label for="choice-1" class="label-1">Clothing</label>
+            <label for="choice-2" class="label-2">Cosmetics</label>
+            <label for="choice-3" class="label-3">Celebration</label>
+            <label for="choice-4" class="label-4">Other</label>
+        </div>
+
+        <div class="pricing">
+            <input type="number" placeholder="Enter a price" th:field="*{price}">
+        </div>
+
+        <input type="file" name="fileImage" id="fileUpload" accept="image/png, image/jpeg">
+
+        <div id="description-field">
+            <label for="description">Description</label>
+            <textarea name="userText" id="description" cols="50" rows="10" placeholder="Describe what you have made..."
+                      required th:field="*{text}"></textarea>
+        </div>
+
+        <div class="item-quantity">
+            <input type="number" placeholder="Enter number of items" th:field="*{quantity}">
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <a th:href="@{/home}">Return to home page</a>
+
+</div>
+
+</body>
+</html>

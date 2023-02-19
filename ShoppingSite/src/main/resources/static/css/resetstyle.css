@@ -1,0 +1,55 @@
+body{
+  background-color: #FAC9DE;
+}
+
+.reset-password{
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  display: flex;
+  background-color: #e6dde042;
+}
+
+.reset-password h1 {
+  position: absolute;
+  margin-left: 140px;
+}
+
+.reset-password button{
+  height: 30px;
+  width: 50px;
+  margin-left: 30px;
+}
+
+.reset-password a{
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.email-field{
+  height: 25px;
+  
+  margin-top: 200px;
+  margin-left: 120px;
+  border-radius: .5rem;
+
+  align-items: center;
+}
+
+.error{
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 70px;
+
+}
